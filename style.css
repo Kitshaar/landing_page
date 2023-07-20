@@ -6,5 +6,87 @@
 
 body {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* section 1 */
+
+.section-1 {
+  flex: 1;
+  background-color: #1f2937;
+  padding: 0px 50px;
+  /* display: flex; */
+}
+
+.top {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+}
+
+.headline,
+.logo {
+  color: #f9faf8;
+  font-size: 24px;
+}
+
+.headline {
+  font-size: 48px;
+}
+
+.paragraph,
+a {
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 72px;
   border: 1px solid red;
+}
+
+.left-side {
+  width: 400px;
+  flex-shrink: 0;
+  margin: 72px;
+}
+
+.right-side {
+  /* flex: 1; */
+  min-width: 500px;
+  background-color: grey;
+  min-height: 200px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-2 {
+  flex: 1;
+}
+
+.section-3 {
+  flex: 1;
+}
+
+.section-4 {
+  flex: 1;
+}
+
+.footer {
 }
