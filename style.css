@@ -6,10 +6,10 @@
 }
 
 body {
-  /* min-height: 100vh; */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 /* section 1 */
@@ -17,12 +17,11 @@ body {
 .section-1 {
   flex: 1;
   background-color: #1f2937;
-  /* display: flex; */
 }
 
 .top {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 12px;
 }
 
@@ -47,7 +46,8 @@ a {
 ul {
   list-style: none;
   display: flex;
-  gap: 24px;
+  gap: 30px;
+  justify-content: space-evenly;
 }
 
 a {
@@ -60,7 +60,6 @@ a {
   align-items: center;
   padding: 88px 0;
   gap: 72px;
-  border: 1px solid red;
 }
 
 .left-side {
@@ -69,11 +68,15 @@ a {
   margin: 72px;
 }
 
+.sign-up {
+  padding-top: 12px;
+}
+
 .right-side {
   /* flex: 1; */
-  min-width: 500px;
+  min-width: 600px;
   background-color: grey;
-  min-height: 200px;
+  min-height: 250px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -127,14 +130,12 @@ a {
   justify-content: center;
   align-items: center;
   padding: 100px 0;
-  /* border: 1px solid blueviolet; */
 }
 
 .container {
   width: 800px;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid red; */
 }
 
 .quote {
@@ -150,9 +151,69 @@ a {
   font-weight: bold;
 }
 
+/* section 4 */
+
 .section-4 {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
 }
 
+.background {
+  background-color: #3883f6;
+  width: 1000px;
+  height: 150px;
+  border: 2px solid #3883f6;
+  border-radius: 10px;
+  display: flex;
+}
+
+.call-to-action {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  padding-left: 100px;
+  flex-direction: column;
+}
+
+.part-1,
+.part-2 {
+  color: white;
+}
+
+.part-1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.button-4 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 14px 28px;
+  color: white;
+  background-color: #3882f6;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* footer */
+
 .footer {
+  height: 100px;
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  padding: 0px 25px;
 }
