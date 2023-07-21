@@ -60,6 +60,7 @@ a {
   align-items: center;
   padding: 88px 0;
   gap: 72px;
+  flex-wrap: wrap;
 }
 
 .left-side {
@@ -74,7 +75,8 @@ a {
 
 .right-side {
   /* flex: 1; */
-  min-width: 600px;
+  width: auto;
+  flex-basis: 500px;
   background-color: grey;
   min-height: 250px;
   flex-shrink: 0;
@@ -92,14 +94,25 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .content-2 {
   display: flex;
-  width: 800px;
   padding: 12px;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.container-2 {
+  display: flex;
+  gap: 30px;
+}
+
+.sub-content {
+  flex-wrap: wrap;
 }
 
 .headline-2 {
@@ -136,6 +149,7 @@ a {
   width: 800px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .quote {
@@ -143,6 +157,7 @@ a {
   font-style: italic;
   font-family: "cursive", serif;
   color: #1f2937;
+  padding: 12px;
 }
 
 .author {
@@ -168,6 +183,8 @@ a {
   border: 2px solid #3883f6;
   border-radius: 10px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .call-to-action {
@@ -176,6 +193,7 @@ a {
   justify-content: center;
   padding-left: 100px;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .part-1,
@@ -193,6 +211,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 12px;
+  flex-wrap: wrap;
 }
 
 button {
